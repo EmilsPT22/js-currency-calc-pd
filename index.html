@@ -65,7 +65,7 @@ Lietotājs var dzēst katru vēstures ierakstu. -->
         }
 
         let convertedAmount;
-        switch (toCurrency) {
+        switch (fromCurrency) {
           case "USD":
             convertedAmount =
               amount * { EUR: 0.85, GBP: 0.75, USD: 1 }[toCurrency];
