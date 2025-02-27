@@ -60,8 +60,10 @@ Lietotājs var dzēst katru vēstures ierakstu. -->
         const toCurrency = toCurrencyInput.value;
         const amount = parseFloat(amountInput.value);
 
-        if (isNaN(amount) || amount <= 0) {
-          result.innerHTML = "Ievadi derīgu daudzumu";
+        function validacija() {
+          if (isNaN(amount) || amount <= 0) {
+            result.innerHTML = "Ievadi derīgu daudzumu";
+          }
         }
 
         let convertedAmount;
