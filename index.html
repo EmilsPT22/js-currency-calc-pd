@@ -56,8 +56,8 @@ Lietotājs var dzēst katru vēstures ierakstu. -->
       const fromCurrencyInput = document.getElementById("from-currency");
 
       function handleClick() {
-        const fromCurrency = parseFloat(fromCurrencyInput.value);
-        const toCurrency = parseFloat(toCurrencyInput.value);
+        const fromCurrency = fromCurrencyInput.value;
+        const toCurrency = toCurrencyInput.value;
         const amount = parseFloat(amountInput.value);
 
         if (isNaN(amount) || amount <= 0) {
