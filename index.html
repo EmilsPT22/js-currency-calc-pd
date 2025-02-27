@@ -53,11 +53,12 @@ Lietotājs var dzēst katru vēstures ierakstu. -->
       const btn = document.getElementById("convert-btn");
       const amountInput = document.getElementById("amount");
       const result = document.getElementById("result");
+      const fromCurrencyInput = document.getElementById("from-currency");
 
       function handleClick() {
-        const fromCurrency = fromCurrencyInput.value;
-        const toCurrency = toCurrencyInput.value;
-        const amount = parseFloat(amountInput);
+        const fromCurrency = parseFloat(fromCurrencyInput.value);
+        const toCurrency = parseFloat(toCurrencyInput.value);
+        const amount = parseFloat(amountInput.value);
 
         if (isNaN(amount) || amount <= 0) {
           result.innerHTML = "Ievadi derīgu daudzumu";
